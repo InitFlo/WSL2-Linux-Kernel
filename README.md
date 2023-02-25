@@ -30,7 +30,7 @@ as follows:
 1. Install the build dependencies:  
    `$ sudo apt install build-essential flex bison dwarves libssl-dev libelf-dev`
 2. Build the kernel using the WSL2 kernel configuration:  
-   `$ make KCONFIG_CONFIG=Microsoft/config-wsl`
+   `$ make KCONFIG_CONFIG=Microsoft/config-wsl -j$(nproc --all)`
 
 # Install Instructions
 
